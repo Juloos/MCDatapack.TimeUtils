@@ -8,7 +8,7 @@ queue = [(0, 86399)]
 while queue:
     lo, hi = queue.pop(0)
     mid = (lo + hi) // 2
-    print(lo, hi)
+    print(f"\r{lo}-{hi}", end='')
     if hi - lo > 100:
         queue.append((lo, mid))
         queue.append((mid + 1, hi))

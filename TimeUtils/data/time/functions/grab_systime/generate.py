@@ -10,6 +10,6 @@ for XX in range(CLOCK):
     HH = f"{XX // 3600:0=2d}"
     MM = f"{(XX % 3600) // 60:0=2d}"
     SS = f"{XX % 60:0=2d}"
-    print(f"{HH}:{MM}:{SS}")
+    print(f"\r{HH}:{MM}:{SS} / 23:59:59", end='')
     with open(f"{PATH}/{XX}.mcfunction", "w") as file:
         file.write(FUNC.replace("XX", str(XX)).replace("YY", YY).replace("HH", HH).replace("MM", MM).replace("SS", SS))
