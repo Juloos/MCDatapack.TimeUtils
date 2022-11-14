@@ -12,7 +12,6 @@ scoreboard objectives add time.ticktime.MM dummy
 scoreboard objectives add time.ticktime.HH dummy
 scoreboard objectives add time.ticktime.DD dummy
 
-scoreboard objectives add time.realtime dummy
 scoreboard objectives add time.realtime.mode dummy
 scoreboard objectives add time.realtime.SS dummy
 scoreboard objectives add time.realtime.MM dummy
