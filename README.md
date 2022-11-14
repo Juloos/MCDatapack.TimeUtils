@@ -37,7 +37,7 @@ The following sequence of commands will set up a 50-ticks (2.5s) timer attribute
 /execute as Juloos run function time:utils/ticktime/play
 ```
 
-And the following a real time clock that will stop after 2 Minecraft days (or 20*60*20*2 ticks):
+And the following a real time clock that will stop after 2 Minecraft days (or 20\*60\*20\*2 ticks):
 ```
 /execute as Juloos run function time:utils/realtime/set_clock
 /execute as Juloos run function time:utils/realtime/play
