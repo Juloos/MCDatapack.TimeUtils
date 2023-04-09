@@ -20,11 +20,11 @@ Through synchronization of the machine daytime, we can provide realtime versions
 
 # System time
 The system time is based off the daytime of the machine, just like realtime but gives more generic information, it is accessible through the following fake players:
-    - `systime time.vars` is the the number of seconds since last reload of the datapack
-    - `systime.daytime time.vars` is the number of seconds since midnight
-    - `systime.HH time.vars` is the current hour count
-    - `systime.MM time.vars` is the current minute count
-    - `system.SS time.vars` is the current second count
+ - `systime time.vars` is the the number of seconds since last reload of the datapack.
+ - `systime.daytime time.vars` is the number of seconds since midnight.
+ - `systime.HH time.vars` is the current hour count.
+ - `systime.MM time.vars` is the current minute count.
+ - `system.SS time.vars` is the current second count.
 
 # Why using realtime over ticktime ?
 It depends a lot on what you are trying to do: for speedrunning, or splitting contestants of a race, it will be better to use ticktime simply because that allows for more precision and doesn't require desynchronization from TPS. 
