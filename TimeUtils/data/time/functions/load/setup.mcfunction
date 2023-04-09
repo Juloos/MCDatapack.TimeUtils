@@ -21,13 +21,15 @@ scoreboard objectives add time.realtime.DD dummy
 
 
 scoreboard players set -1 time.vars -1
+scoreboard players set 10 time.vars 10
 scoreboard players set 20 time.vars 20
 scoreboard players set 24 time.vars 24
 scoreboard players set 60 time.vars 60
 scoreboard players set 3600 time.vars 3600
 
 setblock 0 -64 0 minecraft:repeating_command_block{auto:1b,Command:"/help me"}
-gamerule maxCommandChainLength 262144
-scoreboard players set found_systime time.vars 0
-function time:grab_systime/0
-gamerule maxCommandChainLength 65536
+kill @e[tag=time.systime_graber]
+summon marker 0 -64 0 {Tags:[time.systime_graber]}
+
+scoreboard players set systime time.vars 0
+function time:tick/grab_systime
