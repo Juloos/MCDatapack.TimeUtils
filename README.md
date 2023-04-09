@@ -16,7 +16,7 @@ Note that you can at any moment get some scores of any given entity:
  - `time.ticktime.SS` + `time.ticktime.MM` + `time.ticktime.HH` + `time.ticktime.DD` are respectively the number of seconds, minutes, hours and days corresponding to `time.ticktime`
 
 # Real time utils
-Through synchronization of the machine daytime, we can provide realtime versions of the tick-based utils functions (replace occurences of `ticktime` by `realtime` and you will have the same results in a real time context, however it will count in seconds rather than ticks)
+Through synchronization of the machine daytime, we can provide realtime versions of the tick-based utils functions. Replace occurences of `ticktime` by `realtime` and you will have the same results in a real time context, however it will count in seconds rather than ticks.
 
 # System time
 The system time is based off the daytime of the machine, just like realtime but gives more generic information, it is accessible through the following fake players:
