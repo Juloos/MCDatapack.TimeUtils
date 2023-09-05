@@ -12,7 +12,7 @@ Run as any entity the following functions to manipulate a tick-based chronometer
  - `/function time:utils/ticktime/pause` will pause the chronometer, without changing its mode.
 
 Note that you can at any moment get some scores of any given entity:
- - `time.ticktime` is the number of ticks in the chronometer (to interpret differentlty wether the mode is clock or timer)
+ - `time.ticktime` is the number of ticks in the chronometer (to interpret differentlty whether the mode is clock or timer)
  - `time.ticktime.SS` + `time.ticktime.MM` + `time.ticktime.HH` + `time.ticktime.DD` are respectively the number of seconds, minutes, hours and days corresponding to `time.ticktime`
 
 # Real time utils
